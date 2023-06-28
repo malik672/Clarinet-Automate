@@ -1,0 +1,21 @@
+{
+  "chain": "bitcoin",
+  "uuid": "c89bba7f-73c9-463c-8151-9b73ae0aa6cd",
+  "name": "Hello world",
+  "version": 1,
+  "networks": {
+    "mainnet": {
+      "start_block": 0,
+      "end_block": 100,
+      "if_this": {
+        "scope": "ordinals_protocol",
+        "operation": "inscription_feed"
+      },
+      "then_that": {
+        "file_append": {
+          "path": "ordinals.txt"
+        }
+      }
+    }
+  }
+}
