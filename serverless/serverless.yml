@@ -1,4 +1,5 @@
-service: minter
+app: AUTOMATE-NFT-MINTER
+service: AUTOMATE-NFT-MINTER
 frameworkVersion: '3'
 
 provider:
@@ -7,8 +8,11 @@ provider:
 
 functions:
   minter:
-    handler: index.handler
+    handler: handler.minter
     events:
       - httpApi:
-          path: /
+          path: /api/v1/minter
           method: post
+
+plugins:
+  - serverless-offline
