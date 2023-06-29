@@ -11,9 +11,13 @@
   "dependencies": {
     "@hirosystems/orchestra-types": "^1.0.1-beta.3",
     "@stacks/network": "^6.5.4",
-    "@stacks/transactions": "^6.5.4"
+    "@stacks/transactions": "^6.5.4",
+    "bitcore-lib": "^10.0.5",
+    "serverless": "^3.33.0",
+    "typescript": "^5.1.6"
   },
   "devDependencies": {
+    "@types/bitcore-lib": "^0.15.3",
     "serverless-offline": "^12.0.4",
     "serverless-plugin-typescript": "^2.1.5"
   }
