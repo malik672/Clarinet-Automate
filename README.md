@@ -61,7 +61,7 @@ A chainhook predicate, specified in `chainhooks/minter.json` is observing BTC tr
 ```
 Whenever this address receives btc, we mint nft to the stacks address of the equivalent using 
 
-```
+```ts
 const network = new StacksTestnet({ url: STACKS_NODE_URL });
   //use user address to build transaction
   const nonce = await getNonce(addressToString(recipientAddress), network);
